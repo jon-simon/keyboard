@@ -7,7 +7,8 @@ import (
 	"strings"
 )
 
-// GetFloat comment
+// GetFloat commentread a floating-point number from the keyboard.
+// It returns the number read and any error encounterd.
 func GetFloat() (float64, error) {
 	reader := bufio.NewReader(os.Stdin)
 	input, err := reader.ReadString('\n')
